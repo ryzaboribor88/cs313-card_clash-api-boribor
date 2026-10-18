@@ -1,7 +1,7 @@
 {
-  "name": "your-game-api",
+  "name": "card-clash-api",
   "version": "1.0.0",
-  "description": "CHANGE_ME - one sentence about your game (CS 313 Software Engineering 1)",
+  "description": "A competitive educational card game where players or teams choose from a continuous card path, answer questions, discover hidden Power Cards, manage HP, and use strategy to achieve the highest score before time runs out.",
   "main": "src/server.js",
   "scripts": {
     "start": "node src/server.js",
@@ -19,7 +19,7 @@
   "engines": {
     "node": ">=22"
   },
-  "author": "CHANGE_ME - your full name",
+  "author": "Ryza Micaela G. Boribor",
   "license": "ISC",
   "dependencies": {
     "dotenv": "^18.0.7",
