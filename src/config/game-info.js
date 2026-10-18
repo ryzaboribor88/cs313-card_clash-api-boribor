@@ -4,7 +4,7 @@ const pkg = require('../../package.json');
 
 module.exports = {
   slug: 'card-clash',            // your group's game, lower case with hyphens, for example shelf-climb
-  name: 'Card Clash',            // the name players will see
+  name: 'CardClash',            // the name players will see
   team: 'Group 2 (3-2)',            // your group's name and section, for example Bookworms (3-1)
   developer: 'ryzaboribor88',       // YOUR GitHub username: this build is yours
   description: 'A competitive educational card game where players or teams choose from a continuous card path, answer questions, discover hidden Power Cards, manage HP, and use strategy to achieve the highest score before time runs out.',     // one sentence about how the game is played
