@@ -85,7 +85,7 @@ A player completed the game when the game ended (status CLOSED, `ended_at` fille
 | 17 | revivals | The result of an accepted aid request (cost and outcome) |
 | 18 | comeback_challenges | The timed challenge after a revival |
 | 19 | comeback_cards | The fixed-point cards used in a comeback challenge |
-| 20 | game_results | The final score, HP and stats of each participant |
+| 20 | game_results | The final score, HP and stats of each participant | 
 
 ## Database scripts
 
