@@ -67,7 +67,7 @@ module.exports = {
         texts: [
           'Which planet is known as the Red Planet?',
           'What is the chemical formula of water?',
-          'Which organelle is the powerhouse of the cell? HAHAHA',
+          'Which organelle is the powerhouse of the cell?',
         ],
       }
     );

@@ -20,8 +20,8 @@ This is my own build of my group's game concept. Every commit in this repository
 ## Setup
 
 ```
-git clone [repository-url]
-cd [folder-name]
+git clone https://github.com/ryzaboribor88/cs313-card_clash-api-boribor.git
+cd cs313-card_clash-api-boribor
 npm install
 ```
 
@@ -60,11 +60,32 @@ Base URL: `http://localhost:3001/api/v1`
 
 ## What "completed" means in my game
 
-[One or two sentences: when does a player count as having completed a game? For example: "A player completed the game when they answered every question, even if some answers were wrong or timed out."]
+A player completed the game when the game ended (status CLOSED, `ended_at` filled in) and the player stayed in it until the end, so their status in that game is `completed`. A player who left before the timer ran out has the status `left` and did not complete the game, even if they already had points.
 
 ## Tables
 
-[List your tables, one line each, in the order of your migrations.]
+| # | Table | What it stores |
+|---|---|---|
+| 1 | users | Accounts with a school ID, name, email and role (host or player) |
+| 2 | question_sets | Sets of questions a host can pick for a game |
+| 3 | questions | One question with its difficulty (green, yellow, red) |
+| 4 | choices | The answer choices of a question, with the correct one marked |
+| 5 | power_cards | The kinds of Power Cards (Point Steal, Double Points, Shield) |
+| 6 | game_sessions | One game, with its 6-digit join code, mode, status and times |
+| 7 | seat | One seat per account per game (UNIQUE on game and user_id), with nickname and score |
+| 8 | players | A player's nickname, token and status inside a game |
+| 9 | participants | The competing unit, a solo player or a team, with score, HP and revival count |
+| 10 | participant_members | Which players belong to which participant |
+| 11 | decks | The card path of a participant |
+| 12 | question_cards | A question made into a card, with its team and solo points |
+| 13 | cards | The cards in a deck, with colour, hidden type and position |
+| 14 | participant_power_cards | Power Cards a participant saved in their inventory |
+| 15 | answers | Every answer given, with points earned and HP change |
+| 16 | aid_requests | A request from an eliminated participant to an active one |
+| 17 | revivals | The result of an accepted aid request (cost and outcome) |
+| 18 | comeback_challenges | The timed challenge after a revival |
+| 19 | comeback_cards | The fixed-point cards used in a comeback challenge |
+| 20 | game_results | The final score, HP and stats of each participant |
 
 ## Database scripts
 
